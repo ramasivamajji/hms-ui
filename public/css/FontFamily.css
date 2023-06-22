@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.mybodycss {
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.search-button {
+  color: #ffffff;
+  background-color: #ff9100;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 15px 10px 15px;
+}
+
+.btn-warning {
+  color: #ffffff;
+  background-color: #ff9100;
+}
+
+/*calender*/
+
+
+.calendar {
+  position: relative;
+  margin: auto;
+  width: 70vw;
+  height: 70vw;
+}
+
+.base {
+
+  border-radius: 2vw;
+  box-shadow: 0.2vw 0.2vw 1vw 0 rgba(0, 0, 0, 0.27);
+  overflow: hidden;
+}
+
+.base.top {
+  width: 70%;
+  height: 15%;
+  /*8*/
+
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  background-color: #29335C;
+}
+
+.base.top .holes {
+  position: absolute;
+  top: 66%;
+  left: 4%;
+}
+
+.base.bottom {
+  width: 70%;
+  height: 28%;
+  position: absolute;
+  top: 21%;
+  left: 15%;
+  background-color: #fff;
+}
+
+.base.bottom .holes {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+}
+
+.base.bottom::before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 28%;
+  background-color: #29335C;
+}
+
+.holes {
+  width: 128.57143%;
+  height: 200%;
+}
+
+.holes .hole {
+  background-color: #669BBC;
+  width: 4%;
+  height: 4%;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 3.8vw;
+  box-shadow: inset 0.2vw 0.2vw 1vw 0 rgba(0, 0, 0, 0.27);
+}
+
+.rings {
+  width: 70%;
+  height: 8%;
+  position: absolute;
+  top: 16%;
+  left: 17.3%;
+}
+
+.rings .ring {
+  width: 3.5%;
+  height: 100%;
+  display: inline-block;
+  background-color: white;
+  margin-left: 4.6vw;
+  border-radius: 70% / 10%;
+  box-shadow: 0.3vw 0 0.5vw -0.2vw rgba(0, 0, 0, 0.27);
+}
+
+.year-side {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  font-size: 45px;
+  background-color: #ff9100;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  color: #29335C;
+}
+
+.year-side::after {
+  /* content: '2017'; */
+  display: block;
+  color: #29335C;
+  font-family: Roboto, sans-serif;
+  font-size: 7vw;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 35%;
+  left: -30%;
+}
+
+.month-side {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  font-size: 45px;
+  color: #ff9100;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 15%;
+}
+
+.month-side::after {
+  /* content: 'MAY'; */
+  display: block;
+  color: #ff9100;
+  font-family: Roboto, sans-serif;
+  font-size: 8vw;
+  position: absolute;
+  top: 35%;
+  left: 25%;
+}
+
+.days {
+  width: 90%;
+  height: 82%;
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(5, 1fr);
+  grid-gap: 1vw;
+}
+
+.days>div {
+  text-align: center;
+  padding-top: 20%;
+  font-family: Roboto, sans-serif;
+  font-size: 1.8vw;
+  color: #29335C;
+}
+
+.days>div.old {
+  color: #999;
+}
+
+.days>div.weekday {
+  font-weight: bold;
+  color: #ff9100;
+}
+
+.days>div.daydate {
+  margin-top: 75px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1.5px solid #212529;
+}
+
+.days>div.holiday {
+  color: #ff9100;
+}
+
+.days>div>p {
+  font-size: 12px;
+  font-weight: 800;
+  color: green;
+}
+
+
+.table {
+  border-spacing: 0 15px;
+  border-collapse: separate;
+}
+
+.table thead tr th,
+.table thead tr td,
+.table tbody tr th,
+.table tbody tr td {
+  vertical-align: middle;
+  border: none;
+
+
+}
+
+/* .table thead tr th:nth-last-child(1),
+.table thead tr td:nth-last-child(1),
+.table tbody tr th:nth-last-child(1),
+.table tbody tr td:nth-last-child(1) {
+	text-align: center;
+} */
+.table tbody tr {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.table tbody tr td {
+  background: #fff;
+}
+
+.table thead tr th {
+  color: #02044d;
+}
+
+.table tbody tr td:nth-child(1) {
+  border-radius: 5px 0 0 5px;
+}
+
+.table tbody tr td:nth-last-child(1) {
+  border-radius: 0 5px 5px 0;
+}
+
+.table thead tr th:not(:first-child),
+.table tbody tr td:not(:first-child) {
+  text-align: center;
+  align-items: center;
+}
+
+.h-blue {
+  color: #02044d;
+}
+
+.icon-clasic {
+  font-size: 1.3rem;
+  color: #ff9100;
+}
